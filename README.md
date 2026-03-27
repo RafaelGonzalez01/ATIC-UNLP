@@ -1,6 +1,6 @@
 # Analista Programador Universitario UNLP
 
-Este repositorio contiene ejercicios, prácticas y parciales relacionados con la carrera.
+Este repositorio contiene ejercicios, prácticas y parciales relizados en la carrera.
 
 ## Contenido
 
