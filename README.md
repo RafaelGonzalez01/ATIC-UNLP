@@ -1,4 +1,4 @@
-# Analista Programador Universitario UNLP
+# Analista en Tecnologías de la Información y la Comunicación UNLP
 
 Este repositorio contiene ejercicios, prácticas y parciales relizados en la carrera.
 
