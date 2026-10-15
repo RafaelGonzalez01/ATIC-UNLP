@@ -1,0 +1,8 @@
+La ventaja de usar el handshake es que esta hecho especificamente para
+impresoras usando el protocolo centronics,
+sin necesidad de configurarlo facilitando su uso sin tener que mandar
+la señal de strobe, en cambio el pio funciona para cualquier 
+dispositivo, peroteniendo que configurarlo, por lo cual tiene 
+una mayor compatibilidad con respecto al handshake, 
+el handshake no funciona par las luces pero se podria hacer 
+un dispositivo especifico para las luces para facilitar su uso

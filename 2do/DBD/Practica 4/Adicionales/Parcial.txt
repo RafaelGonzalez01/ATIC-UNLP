@@ -1,0 +1,47 @@
+/* 3- AR y SQL
+Resolver 1 - 2 - 3 con AR y SQL y 4 - 5 con SQL. Para aprobar debe hacer 3 SQL bien y 2 AR bien.
+*/
+
+/* Cliente (idCliente, nombre, apellido, DNI, telefono, direccion) */
+/* Venta (nroVenta, total, fecha, hora, idCliente (fk)) */
+/* DetalleVenta (nroVenta (fk), idLibro (fk), cantidad, precioUnitario) */
+/* Libro (idLibro, titulo, autor, precio, stock) */
+
+/* 1 - Listar todos los libros cuyo precio es mayor a $2300. */
+
+SELECT l.titulo
+FROM libro l
+WHERE l.precio > 2300
+
+π δ σ ∧ ⨝ ∩
+
+π titulo σ precio > 2300 (libro)
+
+/* 2- Listar todas las ventas realizadas en agosto del 2023. */
+
+SELECT v.nroVenta
+FROM venta v
+WHERE v.fecha between 1/8/2023 AND 31/8/2023
+
+π nroventa σ fecha >= 1/8/2023 ^ fecha >= 31/8/2023 (venta)
+
+/* 3- Listar nombre, apellido, DNI, teléfono y dirección de clientes que realizaron
+ compras solamente durante el año 2022. */
+
+
+
+/* 4- Listar para cada libro el título, autor, precio y la cantidad total de veces que
+ fue vendido. Tener en cuenta que puede haber libros que no se vendieron. */
+
+SELECT l.titulo,l.autor,l.precio,SUM(d.cantidad)
+FROM libro l
+LEFT JOIN DetalleVenta d ON d.idLibro = l.idLibro
+GROUP BY l.titulo,l.autor,l.precio 
+
+
+/* 5- Listar nroVenta, total, fecha, hora y DNI del cliente, de aquellas ventas donde
+ se haya vendido al menos un libro con precio mayor a 1000. */
+
+ Cliente (idCliente, nombre, apellido, DNI, telefono, direccion)
+
+ nuecliente <= p(idcliente,nuenombre,nueapellido,nuedni,nuetelefono,nuedireccion) (cliente)

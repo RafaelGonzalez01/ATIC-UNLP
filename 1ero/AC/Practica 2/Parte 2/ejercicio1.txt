@@ -1,0 +1,6 @@
+a) el data es de salida , el busy y el strobe son de entrada
+b) la impresora imprime "hoa", no imrpime los demas caracteres porque cuando envia la señal al strobe para imprimir
+en ese momento la impresora esta ocupada y no manda a imprimir ningun dato
+c) en este caso parece que la impresora lo imprimiria porque tiene un espacio suficiente para guardar 2 caracteres sin embargo,
+cuando la memoria de la impresora este llena no podriamos darnos cuenta, pero ademas si no recibe la señal en el strobe la impresora
+no sabria si el dato que entra es un dato valido para imprimir
