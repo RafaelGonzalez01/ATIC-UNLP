@@ -3,9 +3,8 @@
 **/Material/
 **/Clases/
 **/Explicaciones/
-**/MATE2
-**/Diagramas
-**/Clases
+**/MATE2/
+**/Diagramas/
 
 # Ignorar archivos PowerPoint en todo el repositorio (habitualmente solo son teoría)
 *.ppt
