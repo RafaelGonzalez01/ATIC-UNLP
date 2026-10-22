@@ -1,0 +1,12 @@
+# Ignorar carpetas llamadas 'teorias' o 'material' en cualquier nivel del repositorio
+**/Teorias/
+**/Material/
+**/Clases/
+**/Explicaciones/
+**/MATE2
+**/Diagramas
+**/Clases
+
+# Ignorar archivos PowerPoint en todo el repositorio (habitualmente solo son teoría)
+*.ppt
+*.pptx

@@ -2,23 +2,18 @@ package cuadernillo.ejercicio12;
 
 public class CajaDeAhorro extends Cuenta {
 	
-	private double saldo = 0;
-
-	public boolean puedeExtraer(double monto) {
-		return this.saldo >= monto;
+	@Override
+	protected boolean puedeExtraer(double monto) {
+		return this.getSaldo() >= monto + (monto * 0.02);
 	}
 	
-	public boolean extraer(double monto) {
-		double nuevoMonto = monto + monto * 0.02;
-		boolean result = this.puedeExtraer(nuevoMonto);
-		if (result) {
-			saldo -= nuevoMonto;
-		}
-		return result;
-	}
-	
+	@Override
 	public void depositar(double monto) {
-		double nuevoMonto = monto + monto * 0.02;
-		this.saldo += nuevoMonto;
+		super.depositar(monto - (monto * 0.02));
+	}
+	
+	@Override
+	protected void extraerSinControlar(double monto) {
+		super.extraerSinControlar(monto + (monto * 0.02));
 	}
 }

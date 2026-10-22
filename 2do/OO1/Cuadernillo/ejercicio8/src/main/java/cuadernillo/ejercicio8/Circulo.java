@@ -16,7 +16,7 @@ public class Circulo {
 		return Math.PI * this.getDiametro();
 	}
 	
-	public getRadio() {
+	public double getRadio() {
 		return radio;
 	}
 	
